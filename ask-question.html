@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Forum | Green Waste</title>
+    <title>Ask Question | Green Waste</title>
 
     <!-- FOONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/forum.css" />
   </head>
   <body>
+    <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -93,19 +94,21 @@
       </nav>
     </header>
 
+    <!-- MAIN -->
     <main>
       <div class="container">
         <div class="row mt-5">
+          <!-- SIDEBAR -->
           <div class="col-3 sidebar">
             <ul class="sidebar-list">
-              <li class="sidebar-active">
-                <a href="">
+              <li>
+                <a href="forum.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-plus-circle-fill svg-active"
+                    class="bi bi-plus-circle-fill"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -115,14 +118,14 @@
                   All Question
                 </a>
               </li>
-              <li>
+              <li class="sidebar-active">
                 <a href="ask-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-question-circle-fill"
+                    class="bi bi-question-circle-fill svg-active"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -170,101 +173,42 @@
               </li>
             </ul>
           </div>
+
+          <!-- RIGHT MENU -->
           <div class="col-8 main">
-            <div class="heading-main-content">
-              <div class="main-title">
-                <h4>All Question</h4>
-              </div>
-              <div class="button-ask-question">
-                <button class="btn btn-success btn-sm" type="submit">
-                  Ask Question
-                </button>
-              </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Judul</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh title. bagaimana cara mengelola limbah?"
+              />
             </div>
-
-            <div class="list-main-question">
-              <!-- LIST QUESTION -->
-              <div class="row question-list">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-10 question-title">
-                      <h6>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eius, repellendus?Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Quas, optio.
-                      </h6>
-                    </div>
-                    <div class="col-2">12 Answer</div>
-                  </div>
-                  <div class="row footer-question">
-                    <div class="col-7 category-question">
-                      <span>Limbah anorganik</span>
-                      <span>Limbah organik</span>
-                      <span>Limbah B3</span>
-                    </div>
-                    <div class="col-5 user-question">
-                      <img src="assets/img/Avatar.png" alt="" />
-                      <span class="user-name">Rudi Gunawan</span>
-                      <span>1 days ago</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row question-list">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-10 question-title">
-                      <h6>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eius, repellendus?Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Quas, optio.
-                      </h6>
-                    </div>
-                    <div class="col-2">12 Answer</div>
-                  </div>
-                  <div class="row footer-question">
-                    <div class="col-7 category-question">
-                      <span>Limbah anorganik</span>
-                      <span>Limbah organik</span>
-                      <span>Limbah B3</span>
-                    </div>
-                    <div class="col-5 user-question">
-                      <img src="assets/img/Avatar.png" alt="" />
-                      <span class="user-name">Rudi Gunawan</span>
-                      <span>1 days ago</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row question-list">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-10 question-title">
-                      <h6>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eius, repellendus?Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Quas, optio.
-                      </h6>
-                    </div>
-                    <div class="col-2">12 Answer</div>
-                  </div>
-                  <div class="row footer-question">
-                    <div class="col-7 category-question">
-                      <span>Limbah anorganik</span>
-                      <span>Limbah organik</span>
-                      <span>Limbah B3</span>
-                    </div>
-                    <div class="col-5 user-question">
-                      <img src="assets/img/Avatar.png" alt="" />
-                      <span class="user-name">Rudi Gunawan</span>
-                      <span>1 days ago</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Kategori Pertanyaan</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Pilih Kategori</option>
+                <option value="1">Limbah Anorganik</option>
+                <option value="2">Limbah Organik</option>
+                <option value="3">Limbah B3</option>
+              </select>
             </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Pertanyaan apa yang mau di tanyakan ?</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Add</button>
           </div>
         </div>
       </div>
@@ -273,6 +217,7 @@
     <!-- LOADER -->
     <div class="loader"></div>
 
+    <!-- FOOTER -->
     <footer class="text-center text-lg-start">
       <div class="container-fluid p-5">
         <div class="row">
