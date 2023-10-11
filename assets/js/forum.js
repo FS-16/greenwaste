@@ -40,7 +40,9 @@ async function fetchDataWithIncrementalId() {
               <div class="col">
                 <div class="row">
                   <div class="col-10 question-title">
+                    <a href="details-question.html">
                       <h6>${question.title}</h6>
+                    </a>
                   </div>
                   <div class="col-2">12 Answer</div>
                 </div>

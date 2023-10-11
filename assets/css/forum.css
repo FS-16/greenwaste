@@ -43,6 +43,11 @@ ul {
   list-style-type: none;
 }
 
+p {
+  font-family: -apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .btn-success {
   background-color: var(--color-green);
   border: none;
@@ -200,11 +205,37 @@ ul {
   font-size: 0.9rem;
 }
 
+.your-answer-title {
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+
 /* END CSS ASK-QUESTION */
 
 /* START CSS MY-QUESTION */
 
 /* END CSS MY-QUESTION */
+
+/* START CSS DETAILS-QUESTION */
+.user-details-question {
+  margin-top: 1.1rem;
+}
+
+.user-details-question .img-avatar img {
+  margin-right: 0.5rem;
+}
+
+.user-details-question p {
+  margin-top: 1.1rem;
+  font-weight: 300;
+}
+
+.answers-title {
+  border-bottom: 1px solid var(--color-gray);
+}
+.answers > p {
+  font-weight: 200;
+}
+/* END CSS DETAILS-QUESTION */
 
 /* FOOTER */
 footer {
