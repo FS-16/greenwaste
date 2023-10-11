@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-green: #52c41a;
   --color-green-light: #a5ea82;
+  --color-green-light2: #cff3bd;
   --color-green-dark: #1a643d;
   --color-gray: #bababa;
   --color-gray-dark: #727272;
@@ -236,6 +237,55 @@ p {
   font-weight: 200;
 }
 /* END CSS DETAILS-QUESTION */
+
+/* START MY-PARTICIPATION */
+.my-participation {
+  background-color: var(--color-green-light2);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 10px var(--color-gray-dark);
+}
+
+.card-total {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.9rem;
+}
+
+.col-total {
+  background-color: var(--color-green-light);
+  padding: 1rem;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.card-total p {
+  font-weight: 800;
+}
+
+.all-category {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.col-all-category {
+  position: relative;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.col-all-category > img {
+  width: 200px;
+}
+
+.text-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* END MY-PARTICIPATION */
 
 /* FOOTER */
 footer {
