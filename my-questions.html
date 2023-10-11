@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ask Question | Green Waste</title>
+    <title>Forum | Green Waste</title>
 
     <!-- FOONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="assets/css/forum.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -94,7 +93,6 @@
       </nav>
     </header>
 
-    <!-- MAIN -->
     <main>
       <div class="container">
         <div class="row mt-5">
@@ -118,14 +116,14 @@
                   All Question
                 </a>
               </li>
-              <li class="sidebar-active">
+              <li>
                 <a href="ask-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-question-circle-fill svg-active"
+                    class="bi bi-question-circle-fill"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -135,14 +133,14 @@
                   Ask Question
                 </a>
               </li>
-              <li>
+              <li class="sidebar-active">
                 <a href="my-questions.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-person-circle"
+                    class="bi bi-person-circle svg-active"
                     viewBox="0 0 16 16"
                   >
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -173,46 +171,16 @@
               </li>
             </ul>
           </div>
+          <div class="col-8 main">
+            <div class="heading-main-content">
+              <div class="main-title">
+                <h4>My Question</h4>
+              </div>
+            </div>
 
-          <!-- RIGHT MENU -->
-          <div class="col-8 main ask-question">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Judul</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="contoh title. bagaimana cara mengelola limbah?"
-              />
+            <div class="main-my-question" id="main-question">
+              <!-- LIST QUESTION -->
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Kategori Pertanyaan</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Pilih Kategori</option>
-                <option value="1">Limbah Anorganik</option>
-                <option value="2">Limbah Organik</option>
-                <option value="3">Limbah B3</option>
-              </select>
-            </div>
-            <div class="mb-3 deskripsi-pertanyaan">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Pertanyaan apa yang mau di tanyakan ?</label
-              >
-              <p>
-                Deskripsikan dan Jelaskan pertanyaan anda dengan lengkap minimal
-                20 karakter
-              </p>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <button class="btn btn-success" type="submit">Add</button>
           </div>
         </div>
       </div>
@@ -221,7 +189,6 @@
     <!-- LOADER -->
     <div class="loader"></div>
 
-    <!-- FOOTER -->
     <footer class="text-center text-lg-start">
       <div class="container-fluid p-5">
         <div class="row">
@@ -350,5 +317,8 @@
 
     <!-- SCRIPT MAIN JS-->
     <script src="assets/js/main.js"></script>
+
+    <!-- SCRIPT FORUM -->
+    <script src="assets/js/myQuestion.js"></script>
   </body>
 </html>
