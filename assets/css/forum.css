@@ -157,9 +157,14 @@ p {
   padding-bottom: 3rem;
 }
 
-.question-title > h6 {
+.question-title > a {
   font-size: 20px;
   font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.question-title > a:hover {
+  color: var(--color-green);
 }
 
 .footer-question {
