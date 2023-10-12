@@ -1,4 +1,9 @@
 # GreenWaste
+<div style="text-align:center">
+  
+![logo](https://github.com/FS-16/greenwaste/assets/73381115/dd33adec-a447-439b-814d-925d822f8559)
+
+</div>
 GrenWaste adalah website informasi dan forum tanya jawab seputar pengelolaan limbah dan lingkungan.
 
 ## Features & Roadmap
