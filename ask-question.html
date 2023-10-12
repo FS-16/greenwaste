@@ -176,43 +176,51 @@
 
           <!-- RIGHT MENU -->
           <div class="col-8 main ask-question">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Judul</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="contoh title. bagaimana cara mengelola limbah?"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Kategori Pertanyaan</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Pilih Kategori</option>
-                <option value="1">Limbah Anorganik</option>
-                <option value="2">Limbah Organik</option>
-                <option value="3">Limbah B3</option>
-              </select>
-            </div>
-            <div class="mb-3 deskripsi-pertanyaan">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Pertanyaan apa yang mau di tanyakan ?</label
-              >
-              <p>
-                Deskripsikan dan Jelaskan pertanyaan anda dengan lengkap minimal
-                20 karakter
-              </p>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <button class="btn btn-success" type="submit">Add</button>
+            <form id="form">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Judul</label
+                >
+                <input
+                  name="judul"
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="contoh title. bagaimana cara mengelola limbah?"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Kategori Pertanyaan</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="category"
+                >
+                  <option selected>Pilih Kategori</option>
+                  <option value="Limbah Anorganik">Limbah Anorganik</option>
+                  <option value="Limbah Organik">Limbah Organik</option>
+                  <option value="Limbah B3">Limbah B3</option>
+                </select>
+              </div>
+              <div class="mb-3 deskripsi-pertanyaan">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Pertanyaan apa yang mau di tanyakan ?</label
+                >
+                <p>
+                  Deskripsikan dan Jelaskan pertanyaan anda dengan lengkap
+                  minimal 20 karakter
+                </p>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="description"
+                ></textarea>
+              </div>
+              <button class="btn btn-success" type="submit">Add</button>
+            </form>
           </div>
         </div>
       </div>
@@ -349,6 +357,7 @@
     ></script>
 
     <!-- SCRIPT MAIN JS-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js "></script>
+    <script src="assets/js/handleForm.js "></script>
   </body>
 </html>
