@@ -12,6 +12,7 @@ GrenWaste adalah website informasi dan forum tanya jawab seputar pengelolaan lim
 - [⏳] **Page My Participation**: User bisa melihat total pertanyaan yang telah di buat oleh user.
 - [⏳] **Login**: User bisa melakukan login.
 - [⏳] **Register**: User bisa melakukan register.
+- [⏳] **Responsive Mobile**: User bisa mengakses website secara responsive di device yang berbeda.
 
 ## Tech Stack
 - HTML
