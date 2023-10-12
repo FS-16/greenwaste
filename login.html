@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Forum | Green Waste</title>
+    <title>Login | Green Waste</title>
 
     <!-- FOONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +47,7 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="/" class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Solution</a>
@@ -80,18 +80,14 @@
               <button class="btn btn-outline-success me-2" type="submit">
                 Register
               </button>
-              <a href="login.html">
-                <button class="btn btn-success" type="submit">Login</button>
-              </a>
+              <button class="btn btn-success" type="submit">Login</button>
             </div>
           </div>
           <div class="d-none d-lg-block">
             <button class="btn btn-outline-success me-2" type="submit">
               Register
             </button>
-            <a href="login.html">
-              <button class="btn btn-success" type="submit">Login</button>
-            </a>
+            <button class="btn btn-success" type="submit">Login</button>
           </div>
         </div>
       </nav>
@@ -99,49 +95,35 @@
 
     <main>
       <div class="container">
-        <div class="row mt-5">
-          <div class="col-3 sidebar">
-            <ul class="sidebar-list">
-              <li class="sidebar-active">
-                <a href="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-plus-circle-fill svg-active"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
-                    />
-                  </svg>
-                  All Question
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-8 main">
-            <div class="heading-main-content">
-              <div class="main-title">
-                <h4>All Question</h4>
-              </div>
-              <div class="button-ask-question">
-                <a
-                  href="login.html"
-                  class="btn btn-success btn-sm"
-                  type="submit"
-                >
-                  Ask Question
-                </a>
-              </div>
-            </div>
+        <h1>Login</h1>
 
-            <div class="list-main-question" id="main-question">
-              <!-- LIST QUESTION -->
-            </div>
+        <form action="ask-question.html" class="login">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Username</label
+            >
+            <input
+              name="username"
+              type="text"
+              class="form-control"
+              id="username"
+            />
+            <span class="error-message"></span>
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Password</label
+            >
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              id="password"
+            />
+            <span class="error-message"></span>
+          </div>
+          <button class="btn btn-success" type="submit">Login</button>
+        </form>
       </div>
     </main>
 
@@ -278,6 +260,6 @@
     <script src="assets/js/main.js"></script>
 
     <!-- SCRIPT FORUM -->
-    <script src="assets/js/forum.js"></script>
+    <script src="assets/js/login.js"></script>
   </body>
 </html>
