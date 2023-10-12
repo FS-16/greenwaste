@@ -25,3 +25,9 @@ GrenWaste adalah website informasi dan forum tanya jawab seputar pengelolaan lim
 - Javascript
 - Bootstrap
 - mockAPI
+
+## Contributor
+- [Saifullah](https://github.com/koreoxy)
+- [Pristio Medi](https://github.com/Pristio205)
+- [Eka Riyanto](https://github.com/ekariyanto)
+  
