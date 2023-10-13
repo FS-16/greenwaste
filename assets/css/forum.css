@@ -1,0 +1,178 @@
+/* START CSS FORUM */
+/* MAIN */
+.sidebar {
+  padding: 1rem;
+  border-right: 1px solid var(--color-gray);
+}
+
+.sidebar-list > li {
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.sidebar-active {
+  background: var(--color-green-light);
+  border-radius: 20px;
+  color: var(--color-green-dark);
+}
+
+.sidebar-active .svg-active {
+  color: var(--color-green-dark);
+}
+
+.sidebar-list svg {
+  color: var(--color-gray);
+  margin-right: 0.2rem;
+}
+
+.main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.heading-main-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.question-list {
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--color-gray);
+  padding-bottom: 3rem;
+}
+
+.question-title > a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.question-title > a:hover {
+  color: var(--color-green);
+}
+
+.footer-question {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-question > span {
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.user-question .user-name {
+  color: var(--color-green);
+}
+
+.user-question > img {
+  border: 1px solid var(--color-black);
+  width: 45px;
+  border-radius: 50%;
+}
+
+.user-question > span {
+  color: var(--color-gray-dark);
+}
+
+.user-question .time {
+  font-size: 0.8rem;
+}
+/* END CSS FORUM */
+
+/* START CSS ASK-QUESTION */
+.ask-question label {
+  font-weight: bold;
+}
+
+.deskripsi-pertanyaan p {
+  color: var(--color-gray-dark);
+  font-size: 0.9rem;
+}
+
+.your-answer-title {
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+
+/* END CSS ASK-QUESTION */
+
+/* START CSS MY-QUESTION */
+
+/* END CSS MY-QUESTION */
+
+/* START CSS DETAILS-QUESTION */
+.user-details-question {
+  margin-top: 1.1rem;
+}
+
+.user-details-question .img-avatar img {
+  margin-right: 0.5rem;
+}
+
+.user-details-question p {
+  margin-top: 1.1rem;
+  font-weight: 300;
+}
+
+.answers-title {
+  border-bottom: 1px solid var(--color-gray);
+}
+.answers > p {
+  font-weight: 200;
+}
+/* END CSS DETAILS-QUESTION */
+
+/* START MY-PARTICIPATION */
+.my-participation {
+  background-color: var(--color-green-light2);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 10px var(--color-gray-dark);
+}
+
+.card-total {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.9rem;
+}
+
+.col-total {
+  background-color: var(--color-green-light);
+  padding: 1rem;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.card-total p {
+  font-weight: 800;
+}
+
+.all-category {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.col-all-category {
+  position: relative;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.col-all-category > img {
+  width: 200px;
+}
+
+.text-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* END MY-PARTICIPATION */
