@@ -44,7 +44,7 @@ async function fetchDataWithIncrementalId() {
                       <h6>${question.title}</h6>
                     </a>
                   </div>
-                  <div class="col-2">12 Answer</div>
+                 
                 </div>
               </div>
               <div class="description-question">

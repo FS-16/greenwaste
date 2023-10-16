@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+/* CLASS ACTIVE NAVBAR */
+.navbar-nav .nav-item > .active {
+  color: var(--color-green);
+}
+
 /* LOADER */
 .loader {
   position: fixed;
@@ -130,6 +135,16 @@ footer {
   .connect-with-us {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  /* NAVBAR */
+  .container-fluid > img {
+    width: 60%;
+  }
+
+  /* FOOOTER */
+  footer {
+    margin-bottom: 5rem;
   }
 }
 

@@ -241,3 +241,91 @@ p {
   transform: translate(-50%, -50%);
 }
 /* END MY-PARTICIPATION */
+
+/* BREAKPOINTS */
+/* DEKSTOP */
+@media screen and (max-width: 1536px) {
+}
+
+/* LAPTOP */
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .row-main-forum {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    /* display: none; */
+    border-right: none;
+    width: 100%;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    /* box-shadow: 5px 5px var(--color-black); */
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    padding: 1rem;
+    gap: 21%;
+    border: 2px solid var(--color-green);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0rem;
+    padding: 0rem;
+  }
+
+  .sidebar-active {
+    box-shadow: 1px 1px 2px var(--color-black);
+  }
+
+  .menu-sidebar {
+  }
+
+  .sidebar-list svg {
+    color: var(--color-gray);
+    margin-right: 0rem;
+  }
+
+  .sidebar-list > li {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+  }
+
+  /* START CSS FORUM */
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+  }
+
+  .footer-question {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-question {
+    margin-top: 1rem;
+  }
+  /* END CSS FORUM */
+}
+
+/* HP ATAU PHONE */
+@media screen and (max-width: 640px) {
+  .sidebar-list {
+    gap: 10%;
+  }
+}
