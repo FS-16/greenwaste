@@ -70,7 +70,22 @@ class Login {
 }
 
 const form = document.querySelector('.login');
+
 if (form) {
   const fields = ['username', 'password'];
   const validate = new Login(form, fields);
+}
+
+const auth = localStorage.getItem('auth', 1);
+if (auth == 1) {
+  document.getElementById('askQuestion').style.display = 'block';
+  document.getElementById('myQuestion').style.display = 'block';
+  document.getElementById('myParticipation').style.display = 'block';
+  document.getElementById('login').style.display = 'none';
+  document.getElementById('register').style.display = 'none';
+} else {
+  document.getElementById('askQuestion').style.display = 'none';
+  document.getElementById('myQuestion').style.display = 'none';
+  document.getElementById('myParticipation').style.display = 'none';
+  document.getElementById('logout-button').style.display = 'none';
 }

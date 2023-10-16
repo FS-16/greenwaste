@@ -87,12 +87,22 @@
             </div>
           </div>
           <div class="d-none d-lg-block">
-            <button class="btn btn-outline-success me-2" type="submit">
+            <button
+              class="btn btn-outline-success me-2"
+              type="submit"
+              id="register"
+            >
               Register
             </button>
             <a href="login.html">
-              <button class="btn btn-success" type="submit">Login</button>
+              <button class="btn btn-success" type="submit" id="login">
+                Login
+              </button>
             </a>
+
+            <button class="btn btn-success" id="logout-button">
+              <a href="" class="logout" onclick="logOut()"> Logout </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -120,7 +130,8 @@
                   All Question
                 </a>
               </li>
-              <li>
+
+              <li id="askQuestion">
                 <a href="ask-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +148,7 @@
                   Ask Question
                 </a>
               </li>
-              <li>
+              <li id="myQuestion">
                 <a href="my-questions.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +167,7 @@
                   My Question
                 </a>
               </li>
-              <li>
+              <li id="myParticipation">
                 <a href="my-participation.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +211,7 @@
     </main>
 
     <!-- LOADER -->
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 
     <footer class="text-center text-lg-start">
       <div class="container-fluid p-5">
@@ -333,5 +344,6 @@
 
     <!-- SCRIPT FORUM -->
     <script src="assets/js/forum.js"></script>
+    <script src="assets/js/auth/auth.js"></script>
   </body>
 </html>

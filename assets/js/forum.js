@@ -58,7 +58,7 @@ async function fetchDataWithIncrementalId() {
                     <div class="user-question">
                         <img src="${user.avatar}" alt="" />
                         <span class="user-name">${
-                          user ? user.name : 'Tidak Dikenal'
+                          user ? user.username : 'Tidak Dikenal'
                         }</span>
                         <span class="time">${question.createdAt}</span>
                     </div>

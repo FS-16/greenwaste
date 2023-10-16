@@ -2,6 +2,7 @@ class Auth {
   constructor() {
     document.querySelector('body').style.display = 'none';
     const auth = localStorage.getItem('auth');
+
     this.validateAuth(auth);
   }
 
@@ -10,6 +11,7 @@ class Auth {
       window.location.replace('/');
     } else {
       document.querySelector('body').style.display = 'block';
+      console.log(auth);
     }
   }
 
@@ -17,4 +19,10 @@ class Auth {
     localStorage.removeItem('auth');
     window.location.replace('/');
   }
+}
+
+function logOut() {
+  localStorage.removeItem('auth');
+  document.getElementById('logout-button').style.display = 'none';
+  window.location.replace('/');
 }

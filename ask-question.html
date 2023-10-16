@@ -49,7 +49,7 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a href="/" class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Solution</a>
@@ -78,16 +78,32 @@
                 </ul>
               </li>
             </ul>
-            <!-- <div class="d-block d-lg-none">
-              <button class="btn btn-success">
-                <a href="" class="logout"> Logout </a>
+            <div class="d-block d-lg-none">
+              <button class="btn btn-outline-success me-2" type="submit">
+                Register
               </button>
-            </div>-->
-            <div class="">
-              <button class="btn btn-success">
-                <a href="" class="logout"> Logout </a>
-              </button>
+              <a href="login.html">
+                <button class="btn btn-success" type="submit">Login</button>
+              </a>
             </div>
+          </div>
+          <div class="d-none d-lg-block">
+            <button
+              class="btn btn-outline-success me-2"
+              type="submit"
+              id="register"
+            >
+              Register
+            </button>
+            <a href="login.html">
+              <button class="btn btn-success" type="submit" id="login">
+                Login
+              </button>
+            </a>
+
+            <button class="btn btn-success" id="logout-button">
+              <a href="" class="logout" onclick="logOut()"> Logout </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -358,7 +374,6 @@
     <!-- SCRIPT MAIN JS-->
     <!-- <script src="assets/js/main.js "></script> -->
     <script src="assets/js/handleForm.js "></script>
-    <script src="assets/js/auth.js "></script>
-    <script src="assets/js/init.js "></script>
+    <script src="assets/js/auth/auth.js"></script>
   </body>
 </html>
