@@ -10,9 +10,10 @@ GrenWaste adalah website informasi dan forum tanya jawab seputar pengelolaan lim
 
 ### Complete
 - [✅] **Page Forum**: User bisa melihat List-list pertanyaan.
+- [✅] **Page Ask Question**: User bisa memberi atau menambahkan pertanyaan.
+  
 
 ### On Progress 👇
-- [⏳] **Page Ask Question**: User bisa memberi atau menambahkan pertanyaan.
 - [⏳] **Page My Question**: User bisa melihat Halaman My Question.
 - [⏳] **Page My Participation**: User bisa melihat total pertanyaan yang telah di buat oleh user.
 - [⏳] **Login**: User bisa melakukan login.
