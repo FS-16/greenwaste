@@ -25,7 +25,126 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="Logo" width="100">
+      </a>
+      <span class="navbar-text">Green Waste</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto justify-content-around">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Solution</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Forum</a>
+              </li>
+          </ul>
+          <div class="navbar-nav">
+              <button class="btn btn-outline-success mx-2 register-button">Register</button> <!-- Menggunakan class btn-outline-success di sini -->
+              <button class="btn btn-green">Login</button>
+          </div>
+      </div>
+  </nav>
+  
+<!-- bener -->
+<div class="container-fluid banner d-flex flex-column align-items-center justify-content-center text-center">
+    <h1>Ayo Jadilah Pahlawan Lingkungan Bersama Kami!</h1>
+    <p id="description">
+        Dengan setiap tindakan kecil, kita bisa menjadi pahlawan bagi lingkungan. Bergabunglah dengan kami di GreenWaste dan mulailah perjalanan Anda menuju keberlanjutan dan pelestarian lingkungan.
+    </p>
+    <br>
+    <button class="btn btn-gabung">Gabung Sekarang</button>
+</div>
+
+<div class="container-fluid py-5" style="background-color: #f0f0f0;">
+  <div class="container text-center">
+      <h1>Tentang Kami</h1>
+      <p>Misi kami untuk lingkungan yang lebih baik</p>
+  </div>
+</div>
+
+<div class="container-fluid py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <p>
+                  Kami adalah pionir dalam menghadapi tantangan meningkatnya volume limbah rumah tangga dan pabrik. <br> 
+                  Di GreenWaste, kami mendedikasikan diri untuk menyediakan solusi yang inovatif dan edukatif bagi individu, rumah tangga, dan bisnis untuk menghadapi permasalahan lingkungan yang mendesak.
+              </p>
+          </div>
+          <div class="col-md-6">
+              <img src="https://i.ibb.co/x2V1Nfh/tentang-kami.webp" alt="Gambar Anda" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+<!-- card -->
+<div class="container mt-5">
+    <h1 class="text-center">Kenapa Memilih GreenWaste?</h1>
+    <br> <!-- Judul di tengah -->
+    <div class="container mt-5">
+        <h1 class="text-center">Kenapa Memilih GreenWaste?</h1>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="https://i.ibb.co/qk1Gf60/SAMPAH-1-removebg-preview.png" alt="Card Image" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Solusi Pengolahan Limbah</h2>
+                        <p class="card-text">Kami menyediakan solusi komprehensif untuk pengeloaan limbah yang efisien dan berkelanjutan</p>
+                        <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="https://i.ibb.co/t8x0cms/OIP-3-removebg-preview.png" alt="Card Image" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Informasi Terbaru</h2>
+                        <p class="card-text">Terus memperbarui diri dengan perkembangan terkini dalam pengelolaan limbah, teknologi hijau, dan isu-isu lingkungan terbaru</p>
+                        <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="https://i.ibb.co/pjrV8HM/OIP-2-removebg-preview.png" alt="Card Image" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Video Tutorial</h2>
+                        <p class="card-text">Pelajari langkah-langkah praktis dalam mengelola limbah Anda melalui koleksi video tutorial kami</p>
+                        <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="https://i.ibb.co/jWfJzrK/OIP-5-removebg-preview.png" alt="Card Image" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Forum</h2>
+                        <p class="card-text">Temukan tempat untuk berdiskusi, berbagi pengetahuan, dan terhubung dengan sesama anggota komunitas</p>
+                        <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+
+<footer class="bg-success text-white py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2023 GreenWaste</p>
+          </div>
+      </div>
+  </div>
+</footer>
 
     <!-- SCRIPT BOOTSTRAP -->
     <script
@@ -41,5 +160,6 @@
 
     <!-- SCRIPT MAIN JS-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>

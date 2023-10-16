@@ -36,3 +36,101 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.navbar .navbar-brand {
+  margin-right: 20px;
+}
+/* Styling untuk warna teks pada navbar */
+.navbar-nav .nav-link {
+  color: green;
+}
+/* Styling untuk tombol Register dan Login */
+.btn-green {
+  background-color: green;
+  color: white;
+}
+.card-title {
+  color: green;
+}
+.btn-green {
+  background-color: green;
+  color: white;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  background: url("https://i.ibb.co/BNv4PRc/sampah.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CSS untuk tombol "Gabung Sekarang" */
+.btn-gabung {
+  background-color: #28a745; /* Warna hijau asli */
+  color: #fff; /* Warna teks putih */
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s; /* Efek transisi saat hover */
+}
+
+.btn-gabung:hover {
+  background-color: #fff; /* Warna putih saat hover */
+  color: #28a745; /* Warna hijau saat hover */
+  transform: translateY(5px); /* Menggeser tombol sedikit ke bawah saat hover */
+}
+.card {
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-body {
+  background-color: #f9f9f9;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007BFF; /* Warna latar belakang tombol */
+  border: none; /* Hapus border tombol */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+}
+
+/* Tambahkan jarak di sekitar card */
+.mb-4 {
+  margin-bottom: 1.5rem; /* Jarak antara card */
+}
+
+.banner h1,
+.banner p {
+    max-width: 600px; /* Sesuaikan dengan lebar maksimal yang Anda inginkan */
+    margin: 0 auto; /* Ini akan memusatkan teks ke tengah */
+}
+.banner p {
+  color: white;
+}
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+
