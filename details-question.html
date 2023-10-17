@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Details Question | Green Waste</title>
+    <title>Forum | Green Waste</title>
 
     <!-- FOONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,47 +48,41 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a href="/" class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Solution</a>
               </li>
-              <li class="d-none d-lg-block nav-item">
+              <li class="d-lg-block nav-item">
                 <a class="nav-link active" href="forum.html">Forum</a>
-              </li>
-
-              <li class="nav-item dropdown d-lg-none">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="forum.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Forum
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">All Question</a></li>
-                  <li><a class="dropdown-item" href="#">Ask Question</a></li>
-                  <li><a class="dropdown-item" href="#">My Question</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Ask Participation</a>
-                  </li>
-                </ul>
               </li>
             </ul>
             <div class="d-block d-lg-none">
               <button class="btn btn-outline-success me-2" type="submit">
                 Register
               </button>
-              <button class="btn btn-success" type="submit">Login</button>
+              <a href="login.html">
+                <button class="btn btn-success" type="submit">Login</button>
+              </a>
             </div>
           </div>
           <div class="d-none d-lg-block">
-            <button class="btn btn-outline-success me-2" type="submit">
+            <button
+              class="btn btn-outline-success me-2"
+              type="submit"
+              id="register"
+            >
               Register
             </button>
-            <button class="btn btn-success" type="submit">Login</button>
+            <a href="login.html">
+              <button class="btn btn-success" type="submit" id="login">
+                Login
+              </button>
+            </a>
+
+            <button class="btn btn-success" id="logout-button">
+              <a href="" class="logout" onclick="logOut()"> Logout </a>
+            </button>
           </div>
         </div>
       </nav>
@@ -96,12 +90,30 @@
 
     <main>
       <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-5 row-main-forum">
           <!-- SIDEBAR -->
-          <div class="col-3 sidebar">
+          <div class="col-3 col-md-4 sidebar">
             <ul class="sidebar-list">
-              <li>
+              <li id="allQuestion" class="sidebar-active">
                 <a href="forum.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-plus-circle-fill svg-active"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                  <span>All Question</span>
+                </a>
+              </li>
+
+              <li id="askQuestion">
+                <a href="ask-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -114,27 +126,11 @@
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
                     />
                   </svg>
-                  All Question
+                  <span>Ask Question</span>
                 </a>
               </li>
-              <li>
-                <a href="ask-question.html">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-question-circle-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
-                    />
-                  </svg>
-                  Ask Question
-                </a>
-              </li>
-              <li>
+
+              <li id="myQuestion">
                 <a href="my-questions.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +149,7 @@
                   My Question
                 </a>
               </li>
-              <li>
+              <li id="myParticipation">
                 <a href="my-participation.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -172,82 +168,20 @@
               </li>
             </ul>
           </div>
-          <div class="col-8 main">
-            <div class="heading-main-content">
-              <h4>
-                Bagaimana membuat limbah rumah tangga menjadi produk yang
-                berkualitas ?
-              </h4>
-            </div>
-            <div class="user-details-question">
-              <div class="img-avatar">
-                <img src="assets/img/Avatar.png" alt="avatar" />
-                <span>Rudi gunawan</span>
-              </div>
-              <p>
-                Apa langkah-langkah yang dapat diambil untuk mengubah limbah
-                elektronik rumah tangga menjadi produk elektronik yang bisa
-                digunakan kembali atau didaur ulang dengan efisien?
-              </p>
-            </div>
 
-            <div class="answers">
-              <div class="answers-title">
-                <span>Answers</span>
-              </div>
-              <p>
-                Untuk mengubah limbah elektronik rumah tangga menjadi produk
-                elektronik yang bisa digunakan kembali atau didaur ulang dengan
-                efisien, beberapa langkah penting yang dapat diambil adalah:
-                Pengumpulan yang Terorganisir: Masyarakat dapat berperan dengan
-                mendaur ulang perangkat elektronik yang tidak lagi digunakan.
-                Program pengumpulan yang terorganisir dapat membantu menghindari
-                pembuangan ilegal dan memfasilitasi pemulihan komponen yang
-                berharga. Pemilahan Limbah: Pemisahan perangkat elektronik
-                menjadi komponen yang berbeda seperti logam, plastik, kabel, dan
-                sirkuit cetak sangat penting. Hal ini memungkinkan untuk mendaur
-                <br />
-                ulang dan memproses masing-masing bahan secara lebih efisien.
-                Pengolahan Aman: Limbah elektronik dapat mengandung bahan
-                berbahaya seperti merkuri, timah hitam, dan bahan kimia beracun
-                lainnya. Pengolahan harus dilakukan dengan aman dan sesuai<br />
-                dengan regulasi lingkungan yang berlaku. Dekomposisi Komponen:
-                Beberapa komponen elektronik seperti hard drive, memori, atau
-                komponen lainnya dapat didekomposisi dan diuji untuk kemungkinan
-                penggunaan kembali dalam perangkat baru. Dengan mengambil
-                langkah-langkah ini, kita dapat mengurangi dampak negatif limbah
-                elektronik dan memaksimalkan potensi penggunaan kembali dan daur
-                ulang komponen elektronik untuk menciptakan produk yang lebih
-                berkelanjutan
-              </p>
-            </div>
+          <!-- RIGHT CONTENT -->
 
-            <div class="your-answer">
-              <div class="mt-5">
-                <div class="your-answer-title">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Your Answer</label
-                  >
-                </div>
-                <textarea
-                  class="form-control mt-3 mb-3"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-              <button class="btn btn-success btn-sm" type="submit">
-                Post your answer
-              </button>
-            </div>
+          <!-- DETAILS QUESTION -->
+          <div class="col-8 main" id="details-question">
+            <!-- CONTENT DETAILS QUESTION -->
           </div>
         </div>
       </div>
     </main>
 
     <!-- LOADER -->
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 
-    <!-- FOOTER -->
     <footer class="text-center text-lg-start">
       <div class="container-fluid p-5">
         <div class="row">
@@ -378,6 +312,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- SCRIPT FORUM -->
-    <script src="assets/js/myQuestion.js"></script>
+    <script src="assets/js/details.js"></script>
+    <script src="assets/js/auth/auth.js"></script>
   </body>
 </html>
