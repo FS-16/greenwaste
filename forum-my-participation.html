@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Question | Green Waste</title>
+    <title>My Participation | Green Waste</title>
 
     <!-- FOONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,10 +51,10 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="/" class="nav-link" href="#">Home</a>
+                <a href="/" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Solution</a>
+                <a class="nav-link" href="pagesolusi.html">Solution</a>
               </li>
               <li class="d-lg-block nav-item">
                 <a class="nav-link active" href="forum.html">Forum</a>
@@ -86,7 +86,7 @@
           <div class="col-3 col-md-4 sidebar">
             <ul class="sidebar-list">
               <li>
-                <a href="forum.html">
+                <a href="forum-all-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -103,7 +103,7 @@
                 </a>
               </li>
               <li>
-                <a href="ask-question.html">
+                <a href="forum-ask-question.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -119,14 +119,14 @@
                   Ask Question
                 </a>
               </li>
-              <li class="sidebar-active">
-                <a href="my-questions.html">
+              <li>
+                <a href="forum-my-questions.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-person-circle svg-active"
+                    class="bi bi-person-circle"
                     viewBox="0 0 16 16"
                   >
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -138,14 +138,14 @@
                   My Question
                 </a>
               </li>
-              <li>
-                <a href="my-participation.html">
+              <li class="sidebar-active">
+                <a href="forum-my-participation.html">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-p-circle-fill"
+                    class="bi bi-p-circle-fill svg-active"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -160,7 +160,7 @@
 
           <!-- MENU FORUM ON MOBILE -->
           <div class="menu-mobile">
-            <a href="forum.html">
+            <a href="forum-all-question.html">
               <div class="menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@
               </div>
               <div class="menu-text">All <br />Question</div>
             </a>
-            <a href="ask-question.html">
+            <a href="forum-ask-question.html">
               <div class="menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,8 +205,8 @@
               </div>
             </a>
 
-            <a href="my-questions.html">
-              <div class="menu-icon icon-active">
+            <a href="forum-my-questions.html">
+              <div class="menu-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -220,11 +220,11 @@
                   />
                 </svg>
               </div>
-              <div class="menu-text text-active">My <br />Question</div>
+              <div class="menu-text">My <br />Question</div>
             </a>
 
-            <a href="my-participation.html">
-              <div class="menu-icon">
+            <a href="forum-my-participation.html">
+              <div class="menu-icon icon-active">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -236,27 +236,12 @@
                   />
                 </svg>
               </div>
-              <div class="menu-text">My <br />Participation</div>
+              <div class="menu-text text-active">My <br />Participation</div>
             </a>
           </div>
 
-          <!-- MAIN LIST MY QUESTION -->
-          <div class="col-8 main">
-            <div class="heading-main-content">
-              <div class="main-title">
-                <h4>My Question</h4>
-              </div>
-            </div>
-
-            <div class="main-my-question" id="main-question">
-              <!-- LIST QUESTION -->
-            </div>
-          </div>
-
-          <!-- DETAILS QUESTION -->
-          <div class="col-8 main" id="details-question">
-            <!-- CONTENT DETAILS QUESTION -->
-          </div>
+          <!-- MAIN CONTENT MY PARTICIPATION -->
+          <div class="col-8 main" id="myParticipation"></div>
         </div>
       </div>
     </main>
@@ -281,13 +266,13 @@
             <h5>Connect With Us</h5>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="">Solution</a>
+                <a href="pagesolusi.html">Solution</a>
               </li>
               <li>
-                <a href="">Forum</a>
+                <a href="forum-all-question.html">Forum</a>
               </li>
             </ul>
           </div>
@@ -374,7 +359,7 @@
 
       <div class="text-center p-3">
         © 2023 Copyright
-        <a class="text-dark" href="">Green Waste</a>
+        <a class="text-dark" href="index.html">Green Waste</a>
       </div>
     </footer>
 
@@ -394,8 +379,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- SCRIPT FORUM -->
-    <script src="assets/js/forum/myQuestion.js"></script>
-    <script src="assets/js/auth/auth.js"></script>
+    <script src="assets/js/forum/myParticipation.js"></script>
 
     <!-- SCRIPT LOADER -->
     <script src="assets/js/loader.js"></script>

@@ -40,13 +40,10 @@ async function addAnswer(valueAnswer, userId, questionId) {
 }
 
 async function showQuestionDetails(question) {
-  // window.location.hash = `question-details?id=${question.id}`;
-
   const dataUser = await fetchUser();
   const userMap = new Map(dataUser.map((user) => [user.id, user]));
   const user = userMap.get(question.userId);
   const answer = question.answer;
-  // const resultAnswer = answer.join('<br>');
 
   const allQuestion = document.getElementById('all-question');
 
@@ -115,7 +112,7 @@ async function showQuestionDetails(question) {
 
     setTimeout(function () {
       alert('Jawaban telah ditambahkan');
-      window.location.href = '/forum.html';
+      window.location.href = '/forum-all-question.html';
     }, 1000);
   });
 

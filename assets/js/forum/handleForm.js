@@ -24,6 +24,6 @@ form.addEventListener('submit', (e) => {
   form.reset();
   setTimeout(function () {
     alert('Pertanyaan telah ditambahkan');
-    window.location.href = '/forum.html';
+    window.location.href = '/forum-all-question.html';
   }, 1000);
 });
