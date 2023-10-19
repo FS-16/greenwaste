@@ -55,22 +55,8 @@ p {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.btn-success {
-  background-color: var(--color-green);
-  border: none;
-}
-
-.btn-success:hover {
-  background-color: var(--color-green-dark);
-}
-
-.btn-outline-success {
-  color: var(--color-green-dark);
-}
-
 /* START CSS FORUM */
 /* MAIN */
-
 .sidebar {
   padding: 1rem;
   border-right: 1px solid var(--color-gray);

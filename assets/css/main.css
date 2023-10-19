@@ -37,6 +37,20 @@ a {
   text-decoration: none;
 }
 
+/* BUTTON */
+.btn-success {
+  background-color: var(--color-green);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: var(--color-green-dark);
+}
+
+.btn-outline-success {
+  color: var(--color-green-dark);
+}
+
 /* CLASS ACTIVE NAVBAR */
 .navbar-nav .nav-item > .active {
   color: var(--color-green);
