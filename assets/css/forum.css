@@ -327,7 +327,7 @@ p {
 
 .all-category .category-1 {
   width: 250px;
-  background-image: url('/assets/img/anorganik.png');
+  background-image: url('/assets/img/forum/anorganik.png');
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -338,7 +338,7 @@ p {
 .all-category .category-2 {
   width: 250px;
 
-  background-image: url('/assets/img/organik.png');
+  background-image: url('/assets/img/forum/organik.png');
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -348,7 +348,7 @@ p {
 
 .all-category .category-3 {
   width: 250px;
-  background-image: url('/assets/img/b3.png');
+  background-image: url('/assets/img/forum/b3.png');
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
