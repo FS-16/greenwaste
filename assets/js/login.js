@@ -1,26 +1,33 @@
-const form = document.getElementById('form');
+async function login(email, password) {
+  const form = document.getElementById('form');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+  try {
+    const response = await fetch(
+      `https://6525852467cfb1e59ce7665e.mockapi.io/forum/users?email=${email}&password=${password}`
+    );
+    if (response.ok) {
+      const data = await response.json();
+      if (data.length > 0) {
+        const user = data[0];
+        localStorage.setItem('auth', JSON.stringify(user));
+        alert('Login successful!');
+        window.location.href = 'index.html';
+        form.reset();
+      } else {
+        alert('Username atau password salah');
+        form.reset();
+      }
+    } else {
+      console.error('Gagal login');
+    }
+  } catch (error) {
+    console.error('Gagal login:', error);
+  }
+}
 
+document.getElementById('form').addEventListener('submit', (event) => {
+  event.preventDefault();
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-
-  fetch(`https://652637e267cfb1e59ce802d9.mockapi.io/user?email=${email}&password=${password}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Invalid email or password');
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      alert('Login successful!');
-      window.location.href = "../../index.html";
-      form.reset();
-    })
-    .catch((error) => {
-      console.error(error);
-      alert(error.message);
-    });
+  login(email, password);
 });
