@@ -40,6 +40,8 @@ async function addAnswer(valueAnswer, userId, questionId) {
 }
 
 async function showQuestionDetails(question) {
+  // window.location.hash = `question-details?id=${question.id}`;
+
   const dataUser = await fetchUser();
   const userMap = new Map(dataUser.map((user) => [user.id, user]));
   const user = userMap.get(question.userId);
@@ -57,22 +59,29 @@ async function showQuestionDetails(question) {
     <h4>${question.title}</h4>
   </div>
   <div class="user-details-question">
+    <p>${question.description}</p>
+    <div class="question-category">${question.category}</div>
     <div class="img-avatar">
       <img src="${user ? user.avatar : ''}" alt="avatar" />
-      <span>${user ? user.username : 'Tidak Dikenal'}</span>
+      <div class="avatar-info">
+        <div>${user ? user.username : 'Tidak Dikenal'}</div>
+        <div class="question-createdAt">${question.createdAt}</div>
+      </div>
     </div>
-    <p>${question.description}</p>
+    
   </div>
   <div class="answers">
     <div class="answers-title">
       <span>Answers</span>
     </div>
     <div class="answer-past">
-      <p>${answer}</p>
+      <h6>Previous Answer</h6>
+      <p class="answer-text">${answer}</p>
     </div>
 
     <div class='answer-new'>
-      <p>${question.valueAnswer}</p>
+      <h6>New Answer</h6>
+      <p>${question ? question.valueAnswer : 'Tidak ada jawaban terbaru'}</p>
     </div>
   </div>
   <div class="your-answer">
@@ -80,6 +89,7 @@ async function showQuestionDetails(question) {
      <div class="your-answer-title">
         <label for="exampleFormControlTextarea1" class="form-label">Your Answer</label>
     </div>
+    <div id="your-answer">
     <form id="addAnswerForm">
       <textarea
         class="form-control mt-3 mb-3"
@@ -88,6 +98,7 @@ async function showQuestionDetails(question) {
         rows="3"></textarea>
       <button class="btn btn-success btn-sm" type="submit">Post your answer</button>
     </form>
+    </div>
     </div>
   </div>
   `;
@@ -100,7 +111,30 @@ async function showQuestionDetails(question) {
     const questionId = question.id;
     const userId = user.id;
     await addAnswer(valueAnswer, questionId, userId);
+    form.reset();
+
+    setTimeout(function () {
+      alert('Jawaban telah ditambahkan');
+      window.location.href = '/forum.html';
+    }, 1000);
   });
+
+  const loginUser = localStorage.getItem('auth');
+  if (loginUser) {
+    document.getElementById('your-answer').style.display = 'block';
+  } else {
+    document.getElementById('your-answer').innerHTML += ` 
+    <br>
+    <div>
+    <span>Login untuk menambahkan jawaban baru</span>
+    <a href="login.html">
+    <button class="btn btn-success" type="submit" id="login-desktop">
+      Login
+    </button>
+  </a>
+  </div>`;
+    document.getElementById('addAnswerForm').style.display = 'none';
+  }
 }
 
 async function fetchDataWithIncrementalId() {
@@ -120,7 +154,7 @@ async function fetchDataWithIncrementalId() {
             <div class="col">
               <div class="row">
                 <div class="col-10 question-title">
-                  <h6 id="question-title${question.id}">${question.title}</h6>
+                    <h6 id="question-title${question.id}">${question.title}</h6>
                 </div>
               </div>
             </div>
@@ -148,8 +182,7 @@ async function fetchDataWithIncrementalId() {
           `question-title${question.id}`
         );
         questionTitleElement.addEventListener('click', () =>
-          // showQuestionDetails(question)
-          window.location.replace('/details-question.html')
+          showQuestionDetails(question)
         );
       });
     } catch (error) {

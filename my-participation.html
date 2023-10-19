@@ -24,6 +24,9 @@
     <!-- CSS MAIN -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/forum.css" />
+
+    <!-- CSS LOADER -->
+    <link rel="stylesheet" href="assets/css/loader.css" />
   </head>
   <body>
     <header>
@@ -48,47 +51,29 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a href="/" class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Solution</a>
               </li>
-              <li class="d-none d-lg-block nav-item">
+              <li class="d-lg-block nav-item">
                 <a class="nav-link active" href="forum.html">Forum</a>
               </li>
-
-              <li class="nav-item dropdown d-lg-none">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="forum.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Forum
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">All Question</a></li>
-                  <li><a class="dropdown-item" href="#">Ask Question</a></li>
-                  <li><a class="dropdown-item" href="#">My Question</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Ask Participation</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
+
+            <!-- MENU NAVBAR MOBILE (HAMBURGER) -->
             <div class="d-block d-lg-none">
-              <button class="btn btn-outline-success me-2" type="submit">
-                Register
+              <button class="btn btn-success" id="logout-mobile">
+                <a href="" class="logout" onclick="logOut()"> Logout </a>
               </button>
-              <button class="btn btn-success" type="submit">Login</button>
             </div>
           </div>
+
+          <!-- MENU NAVBAR DEKSTOP -->
           <div class="d-none d-lg-block">
-            <button class="btn btn-outline-success me-2" type="submit">
-              Register
+            <button class="btn btn-success" id="logout-desktop">
+              <a href="" class="logout" onclick="logOut()"> Logout </a>
             </button>
-            <button class="btn btn-success" type="submit">Login</button>
           </div>
         </div>
       </nav>
@@ -98,7 +83,7 @@
       <div class="container">
         <div class="row mt-5">
           <!-- SIDEBAR -->
-          <div class="col-3 sidebar">
+          <div class="col-3 col-md-4 sidebar">
             <ul class="sidebar-list">
               <li>
                 <a href="forum.html">
@@ -172,57 +157,91 @@
               </li>
             </ul>
           </div>
-          <div class="col-8 main">
-            <div class="my-participation">
-              <h4>My Participation</h4>
-              <div class="img-avatar">
-                <img src="assets/img/Avatar.png" alt="avatar" />
-                <span>Rudi gunawan</span>
+
+          <!-- MENU FORUM ON MOBILE -->
+          <div class="menu-mobile">
+            <a href="forum.html">
+              <div class="menu-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-question-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+                  />
+                </svg>
               </div>
-              <div class="card-total">
-                <div class="col-total me-2">
-                  <h6>Total Question</h6>
-                  <p>20 Question</p>
-                </div>
-
-                <div class="col-total">
-                  <h6>Total Point</h6>
-                  <p>20 Point</p>
-                </div>
+              <div class="menu-text">All <br />Question</div>
+            </a>
+            <a href="ask-question.html">
+              <div class="menu-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
               </div>
-
-              <h6 class="mt-4">All Category</h6>
-              <div class="all-category">
-                <div class="col-all-category">
-                  <img src="assets/img/anorganik.png" alt="anorganik" />
-                  <div class="text-category">
-                    <h6>Limbah Anorganik</h6>
-                    <p>15 Question</p>
-                  </div>
-                </div>
-
-                <div class="col-all-category">
-                  <img src="assets/img/organik.png" alt="organik" />
-                  <div class="text-category">
-                    <h6>Limbah Organik</h6>
-                    <p>2 Question</p>
-                  </div>
-                </div>
-
-                <div class="col-all-category">
-                  <img src="assets/img/b3.png" alt="b3" />
-                  <div class="text-category">
-                    <h6>Limbah B3</h6>
-                    <p>5 Question</p>
-                  </div>
-                </div>
+              <div class="menu-text">Ask <br />Question</div>
+            </a>
+            <a href="/index.html">
+              <div class="menu-icon-home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
               </div>
-            </div>
+            </a>
 
-            <div class="main-my-question">
-              <!-- LIST QUESTION -->
-            </div>
+            <a href="my-questions.html">
+              <div class="menu-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+              </div>
+              <div class="menu-text">My <br />Question</div>
+            </a>
+
+            <a href="my-participation.html">
+              <div class="menu-icon icon-active">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-p-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.5 4.002V12h1.283V9.164h1.668C10.033 9.164 11 8.08 11 6.586c0-1.482-.955-2.584-2.538-2.584H5.5Zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97H8.27Z"
+                  />
+                </svg>
+              </div>
+              <div class="menu-text text-active">My <br />Participation</div>
+            </a>
           </div>
+
+          <!-- MAIN CONTENT MY PARTICIPATION -->
+          <div class="col-8 main" id="myParticipation"></div>
         </div>
       </div>
     </main>
@@ -360,7 +379,9 @@
     <script src="assets/js/main.js"></script>
 
     <!-- SCRIPT FORUM -->
-    <script src="assets/js/myQuestion.js"></script>
-    <script src="assets/js/auth.js "></script>
+    <script src="assets/js/forum/myParticipation.js"></script>
+
+    <!-- SCRIPT LOADER -->
+    <script src="assets/js/loader.js"></script>
   </body>
 </html>

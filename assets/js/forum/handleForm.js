@@ -21,4 +21,9 @@ form.addEventListener('submit', (e) => {
   const description = form.querySelector('[name="description"]').value;
 
   sendToApi({ title, category, description });
+  form.reset();
+  setTimeout(function () {
+    alert('Pertanyaan telah ditambahkan');
+    window.location.href = '/forum.html';
+  }, 1000);
 });

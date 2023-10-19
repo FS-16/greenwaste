@@ -21,7 +21,7 @@ async function fetchQuestionById(questionId) {
 }
 
 async function fetchDataWithIncrementalId() {
-  const questionId = 2;
+  const questionId = 1;
   try {
     const questionData = await fetchQuestionById(questionId);
     const dataUser = await fetchUser();
@@ -31,18 +31,16 @@ async function fetchDataWithIncrementalId() {
     questionData.forEach((question) => {
       const user = userMap.get(question.userId);
       const listItem = document.createElement('div');
-      console.log(question);
 
       listItem.innerHTML = `
             <div class="row question-list">
                 <div class="col">
                   <div class="row">
                     <div class="col-10 question-title">
-                        <a href="details-question.html">
-                            <h6>${question.title}</h6>
-                        </a>
+                      <h6 id="question-title${question.id}">${
+        question.title
+      }</h6>
                     </div>
-                    <div class="col-2">12 Answer</div>
                   </div>
                 </div>
                 <div class="description-question">
@@ -55,7 +53,7 @@ async function fetchDataWithIncrementalId() {
                       <div class="user-question">
                           <img src="${user.avatar}" alt="" />
                           <span class="user-name">${
-                            user ? user.name : 'Tidak Dikenal'
+                            user ? user.username : 'Tidak Dikenal'
                           }</span>
                           <span class="time">${question.createdAt}</span>
                       </div>

@@ -28,15 +28,27 @@ function logOut() {
 }
 
 const loginUser = localStorage.getItem('auth');
+const currentPage = window.location.pathname;
+
 if (loginUser) {
   document.getElementById('askQuestion').style.display = 'block';
   document.getElementById('myQuestion').style.display = 'block';
   document.getElementById('myParticipation').style.display = 'block';
-  document.getElementById('login').style.display = 'none';
-  document.getElementById('register').style.display = 'none';
+  document.getElementById('login-mobile').style.display = 'none';
+  document.getElementById('register-mobile').style.display = 'none';
+  document.getElementById('login-desktop').style.display = 'none';
+  document.getElementById('register-desktop').style.display = 'none';
+  document.getElementById('button-ask-question').style.display = 'none';
 } else {
   document.getElementById('askQuestion').style.display = 'none';
   document.getElementById('myQuestion').style.display = 'none';
   document.getElementById('myParticipation').style.display = 'none';
-  document.getElementById('logout-button').style.display = 'none';
+  document.getElementById('logout-desktop').style.display = 'none';
+  document.getElementById('logout-mobile').style.display = 'none';
+  document.getElementById('button-add-question').style.display = 'none';
+
+  // MENU BAR MOBILE
+  document.getElementById('menu-ask').style.display = 'none';
+  document.getElementById('menu-my-question').style.display = 'none';
+  document.getElementById('menu-my-participation').style.display = 'none';
 }
