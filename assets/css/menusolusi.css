@@ -1,0 +1,215 @@
+header {
+    z-index: 1000
+}
+
+body {
+    margin-top: 78px;
+}
+
+#hero-section {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+    height: 100vh; 
+}
+
+#hero-section::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 1); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    opacity: 0.5; 
+}
+
+#hero-section .container {
+    position: relative; 
+    z-index: 2; 
+    margin-left: 60px;
+}
+
+.container {
+    /* text-align: center; */
+    max-width: 800px; 
+    padding: 20px;
+}
+
+#hero-section-judul {
+    text-align: left; 
+    color: #fff;
+}
+
+#hero-section-judul h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#hero-section-deskripsi {
+    text-align: left; 
+}
+
+#description {
+    font-size: 16px;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+
+}
+
+.section-judul {
+    margin: 50px 50px 0 50px;
+    color: #4C9D24;
+}
+
+.section-judul h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 10px 10px 0 10px;
+}
+
+.section-description ul {
+    list-style-type: none;
+}
+
+.section-description ul li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section-image {
+    min-width: 580px;
+    min-height: 520px;
+    margin: 10px;
+}
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#judul-section2 {
+    margin: 0 0 0 100px;
+    color: #4C9D24;
+    padding-top: 30px;
+}
+
+#judul-section2 h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-container {
+    padding: 30px 100px 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-content: center;
+}
+  
+.card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+}
+  
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.card p {
+    margin: 10px 0;
+}
+  
+footer {
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    #hero-section .container {
+      margin-left: 0; 
+    }
+  
+    #hero-section-judul h1 {
+      font-size: 24px; 
+    }
+  
+    #description {
+      font-size: 14px; 
+    }
+
+    .section {
+        padding: 10px; 
+    }
+    
+    .section-judul h1 {
+        font-size: 16px; 
+    }
+    
+    .section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-description {
+        min-width: 400px;
+    }
+
+    .section-description ul li {
+        font-size: 12px; 
+    }
+    
+    .section-image {
+        min-width: 230px;
+        min-height: 210px;
+    }
+
+    .section-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+  
+    #judul-section2 h2 {
+      font-size: 16px; 
+    }
+  
+
+    .card-container {
+      padding: 30px 20px; 
+      grid-template-columns: 1fr; 
+    }
+    
+    .card {
+      margin: 0; 
+      padding: 16px; 
+    }
+    
+    .card p {
+      font-size: 14px; 
+    }
+  
+  }
+  
