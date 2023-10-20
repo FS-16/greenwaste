@@ -70,6 +70,9 @@ p {
 
 /* START CSS FORUM */
 /* MAIN */
+main {
+  margin-top: 10rem;
+}
 
 .sidebar {
   padding: 1rem;
@@ -383,6 +386,9 @@ p {
 
 /* TABLET */
 @media screen and (max-width: 768px) {
+  main {
+    margin-top: 8rem;
+  }
   .sidebar {
     display: none;
   }
