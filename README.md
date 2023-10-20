@@ -8,6 +8,8 @@ GreenWaste sebagai pionir dalam menghadapi tantangan meningkatnya volume limbah 
 <span></span>
 Selain itu, kami juga menyediakan beragam solusi bermanfaat, seperti tips praktis, video tutorial, dan berita terkini, yang dapat membantu Anda memahami lebih baik bagaimana mengelola limbah dan berkontribusi dalam pelestarian lingkungan. Visi kami adalah mengatasi permasalahan lingkungan yang mendesak dengan pendekatan yang berkelanjutan, dan kami berharap bahwa sumber daya ini akan membantu Anda serta semua orang dalam upaya bersama menciptakan dunia yang lebih hijau dan berkelanjutan.
 
+## Live demo
+https://greenwaste.netlify.app/
 
 ## Features & Roadmap
 
@@ -19,10 +21,12 @@ Selain itu, kami juga menyediakan beragam solusi bermanfaat, seperti tips prakti
 - [✅] **Page Details Question**: User bisa melihat details pertanyaan.
 - [✅] **Page My Participation**: User bisa melihat total pertanyaan yang telah di buat oleh user.
 - [✅] **Add Answer**: User bisa menambahkan jawaban pada pertanyaan.
+- [✅] **Login**: User bisa melakukan login.
+- [✅] **Register**: User bisa melakukan register.
+- [✅] **Page Solusi**: User bisa melihat solusi-solusi yang diberikan
+- 
   
 ### On Progress 👇
-- [⏳] **Login**: User bisa melakukan login.
-- [⏳] **Register**: User bisa melakukan register.
 - [⏳] **Responsive Mobile**: User bisa mengakses website secara responsive di device yang berbeda.
 
 ## Tech Stack
