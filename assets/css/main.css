@@ -1,3 +1,4 @@
+
 :root {
   --background-color: #ffffff;
   --color-black: #000000;
@@ -325,3 +326,4 @@ footer {
 /* HP ATAU PHONE */
 @media screen and (max-width: 640px) {
 }
+

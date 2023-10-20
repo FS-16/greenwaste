@@ -1,0 +1,461 @@
+:root {
+  --background-color: #ffffff;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-green: #52c41a;
+  --color-green-light: #a5ea82;
+  --color-green-light2: #cff3bd;
+  --color-green-light3: #e9f7e2;
+  --color-green-dark: #1a643d;
+  --color-yellow: #c4b91a;
+  --color-yellow-light: #e8ea82;
+  --color-yellow-light2: #eff3bd;
+  --color-yellow-light3: #f7f7e2;
+  --color-yellow-dark: #54641a;
+  --color-gray: #bababa;
+  --color-gray-dark: #727272;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+body {
+  color: var(--color-black);
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-family: -apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-success {
+  background-color: var(--color-green);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: var(--color-green-dark);
+}
+
+.btn-outline-success {
+  color: var(--color-green-dark);
+}
+
+/* START CSS FORUM */
+/* MAIN */
+
+.sidebar {
+  padding: 1rem;
+  border-right: 1px solid var(--color-gray);
+}
+
+.sidebar-list > li {
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.sidebar-active {
+  background: var(--color-green-light);
+  border-radius: 20px;
+  color: var(--color-green-dark);
+}
+
+.sidebar-active .svg-active {
+  color: var(--color-green-dark);
+}
+
+.sidebar-list svg {
+  color: var(--color-gray);
+  margin-right: 0.2rem;
+}
+
+.main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.heading-main-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.question-list {
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--color-gray);
+  padding-bottom: 3rem;
+}
+
+.question-title > h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.question-title > h6:hover {
+  color: var(--color-green);
+  cursor: pointer;
+}
+
+.question-title > a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.question-title > a:hover {
+  color: var(--color-green);
+}
+
+.footer-question {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-question > span {
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.user-question .user-name {
+  color: var(--color-green);
+}
+
+.user-question > img {
+  border: 1px solid var(--color-black);
+  width: 45px;
+  border-radius: 50%;
+}
+
+.user-question > span {
+  color: var(--color-gray-dark);
+}
+
+.user-question .time {
+  font-size: 0.8rem;
+}
+/* END CSS FORUM */
+
+/* START CSS ASK-QUESTION */
+.ask-question label {
+  font-weight: bold;
+}
+
+.deskripsi-pertanyaan p {
+  color: var(--color-gray-dark);
+  font-size: 0.9rem;
+}
+
+.your-answer-title {
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+
+/* END CSS ASK-QUESTION */
+
+/* START CSS MY-QUESTION */
+
+/* END CSS MY-QUESTION */
+
+/* START CSS DETAILS-QUESTION */
+.user-details-question {
+  margin-top: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
+.user-details-question .question-category {
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+  border-radius: 5px;
+  padding: 1px 1px;
+  width: 120px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.user-details-question .img-avatar {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-details-question .img-avatar .avatar-info .question-createdAt {
+  color: var(--color-gray);
+}
+
+.user-details-question .img-avatar > img {
+  border: 1px solid var(--color-black);
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user-details-question > p {
+  margin-top: 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.answers-title {
+  border-bottom: 1px solid var(--color-gray);
+  font-size: 1.2rem;
+}
+
+.answer-past {
+  margin-top: 1.8rem;
+}
+
+.answer-past > h6 {
+  background-color: var(--color-green-light2);
+  width: 160px;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  color: var(--color-green-dark);
+  font-weight: 500;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.answer-past > p {
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid var(--color-green-dark);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-green-light3);
+}
+
+.answer-new {
+  margin-top: 1.8rem;
+}
+
+.answer-new > h6 {
+  background-color: var(--color-yellow-light2);
+  width: 130px;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  color: var(--color-yellow-dark);
+  font-weight: 500;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.answer-new > p {
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid var(--color-yellow-dark);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-yellow-light3);
+}
+
+.your-answer-title {
+  font-size: 1.2rem;
+}
+/* END CSS DETAILS-QUESTION */
+
+/* START MY-PARTICIPATION */
+.my-participation {
+  background-color: var(--color-green-light3);
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid var(--color-green-dark);
+}
+
+.img-avatar > img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.card-total {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.9rem;
+}
+
+.col-total {
+  background-color: var(--color-yellow-light2);
+  border: 1px solid var(--color-yellow-dark);
+  padding: 1rem;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.card-total p {
+  font-weight: 800;
+}
+
+.all-category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.all-category .category-1 {
+  width: 250px;
+  background-image: url('/assets/img/forum/anorganik.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.all-category .category-2 {
+  width: 250px;
+
+  background-image: url('/assets/img/forum/organik.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.all-category .category-3 {
+  width: 250px;
+  background-image: url('/assets/img/forum/b3.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.text-category {
+  text-align: center;
+  color: var(--color-white);
+  padding: 2rem;
+}
+
+/* END MY-PARTICIPATION */
+
+/* MENU MOBILE */
+.menu-mobile {
+  display: none;
+}
+
+/* BREAKPOINTS */
+/* DEKSTOP */
+@media screen and (max-width: 1536px) {
+}
+
+/* LAPTOP */
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  /* MENU MOBILE */
+  .menu-mobile {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0rem;
+    background-color: var(--color-green-light2);
+    padding: 10px;
+    box-shadow: 1px 1px 10px var(--color-gray);
+  }
+
+  .menu-mobile .menu-icon {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .menu-mobile .menu-icon > svg {
+    width: 25px;
+    color: var(--color-gray-dark);
+  }
+
+  .menu-mobile .menu-icon-home > svg {
+    width: 55px;
+    padding: 5px;
+    border: 1px solid var(--color-green-dark);
+    border-radius: 50%;
+    color: var(--color-green-dark);
+  }
+
+  .menu-mobile .menu-text {
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--color-gray-dark);
+  }
+
+  .menu-mobile .icon-active > svg {
+    color: var(--color-green);
+  }
+
+  .menu-mobile .text-active {
+    color: var(--color-green-dark);
+  }
+
+  /* START CSS FORUM */
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-question {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-question {
+    margin-top: 1rem;
+  }
+  /* END CSS FORUM */
+}
+
+/* HP ATAU PHONE */
+@media screen and (max-width: 640px) {
+  .sidebar-list {
+    gap: 10%;
+  }
+}
