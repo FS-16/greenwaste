@@ -325,8 +325,7 @@ footer {
 /* HP ATAU PHONE */
 @media screen and (max-width: 640px) {
 }
-=======
-:root {
+======= :root {
   --background-color: #ffffff;
   --color-black: #000000;
   --color-white: #ffffff;
@@ -554,7 +553,7 @@ main {
   font-size: 0.9rem;
 }
 
-.card > button {
+.card .btn-card {
   margin-top: 1rem;
 }
 

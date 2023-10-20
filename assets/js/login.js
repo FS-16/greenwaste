@@ -11,7 +11,7 @@ async function login(email, password) {
         const user = data[0];
         localStorage.setItem('auth', JSON.stringify(user));
         alert('Login successful!');
-        window.location.href = 'index.html';
+        window.location.href = '/forum-all-question.html';
         form.reset();
       } else {
         alert('Username atau password salah');
