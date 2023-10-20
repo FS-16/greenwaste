@@ -1,8 +1,17 @@
+header {
+    z-index: 1000
+}
+
+body {
+    margin-top: 78px;
+}
+
 #container {
     margin: 60px 140px 60px 140px;
 }
 
 #arrowback {
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
