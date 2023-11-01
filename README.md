@@ -24,10 +24,11 @@ https://greenwaste.netlify.app/
 - [✅] **Login**: User bisa melakukan login.
 - [✅] **Register**: User bisa melakukan register.
 - [✅] **Page Solusi**: User bisa melihat solusi-solusi yang diberikan
-- 
+  
   
 ### On Progress 👇
 - [⏳] **Responsive Mobile**: User bisa mengakses website secara responsive di device yang berbeda.
+- [⏳] **Auth Login**: Auth login
 
 ## Tech Stack
 - HTML
