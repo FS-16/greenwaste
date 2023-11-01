@@ -28,7 +28,6 @@ https://greenwaste.netlify.app/
   
 ### On Progress 👇
 - [⏳] **Responsive Mobile**: User bisa mengakses website secara responsive di device yang berbeda.
-- [⏳] **Auth Login**: Auth login
 
 ## Tech Stack
 - HTML
